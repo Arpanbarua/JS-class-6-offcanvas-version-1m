@@ -10,6 +10,7 @@
 
     nav .bar {
         display: block;
+        cursor: pointer;
     }
 
     /* nav .box
@@ -17,16 +18,108 @@
        visibility: visible;
     } */
 
-    nav .box .cross-btn
-    {
-        display: inline-block;
-        
+    nav .box .cross-btn {
+        /* display: inline-block; */
+        padding: 10px;
+        color: #fff;
+
     }
 
-    nav .box-flex
-    {
+    nav .box-flex {
         display: flex;
         justify-content: space-between;
     }
 
+    nav .box .menu-box li a {
+        color: #fff;
+    }
+
+    nav .box {
+        background: #777;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0%;
+        opacity: 0;
+        visibility: hidden;
+        transition: 1s;
+        overflow: hidden;
+
+    }
+
+
+
+    nav .box.hide {
+        visibility: hidden;
+        opacity: 0;
+        width: 0%;
+    }
+
+    nav .box.active {
+        visibility: visible;
+        opacity: 1;
+        width: 80%;
+    }
+
+    nav .box-flex .box-img {
+        width: 90%;
+    }
+
+    nav .box-flex .cross-btn {
+        width: 10%;
+    }
+
+
+    nav .menu-box {
+        transition: opacity 0.3s ease;
+        opacity: 1;
+    }
+
+    nav .box.hide .menu-box {
+        opacity: 0;
+    }
+
+
+
+    nav .box .cross-btn {
+        text-align: right;
+        padding: 15px 15px 0 0;
+
+    }
+
+
+    nav .box .cross-btn .cross {
+        display: inline-block;
+    }
+
+    nav .menu-box {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    nav .menu-box li {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+
+        text-align: center;
+    }
+
+}
+
+@media(max-width:1200px) and (min-width: 993px) {
+    nav .menus {
+        width: 50%;
+        text-align: right;
+    }
+
+    nav .logo-pic {
+        width: 40%;
+    }
+
+    nav .menus .menu-list li a {
+        font-size: 13px;
+        padding: 0 5px;
+    }
 }

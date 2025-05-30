@@ -36,7 +36,7 @@ nav
     position: relative;
 }
 
-nav ul li a 
+nav .menus ul li a 
 {
    padding: 0 10px;
    font-size: 18px;
@@ -44,7 +44,7 @@ nav ul li a
    color: #000;
 }
 
-nav ul li 
+nav .menus ul li 
 {
     display: inline-block;
 }
@@ -55,6 +55,10 @@ nav .bar
 }
 
 nav .box
+{
+    display: none;
+}
+/* nav .box
 {
     background: #777;
    
@@ -82,11 +86,7 @@ nav .box.active
      width: 80%;
 }
 
-/* nav .lists 
-{
-    display: flex;
-    justify-content: space-between;
-} */
+
 
 nav .menu-box {
     transition: opacity 0.3s ease;
@@ -125,4 +125,4 @@ nav .menu-box li
     padding: 15px ;
 
     text-align: center;
-}
+} */
