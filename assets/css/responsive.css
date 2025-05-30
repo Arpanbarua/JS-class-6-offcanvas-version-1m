@@ -1,0 +1,32 @@
+@media(max-width:992px) {
+    nav .menus {
+        display: none;
+    }
+
+    nav .logo-pic img {
+        width: 200px;
+
+    }
+
+    nav .bar {
+        display: block;
+    }
+
+    /* nav .box
+    {
+       visibility: visible;
+    } */
+
+    nav .box .cross-btn
+    {
+        display: inline-block;
+        
+    }
+
+    nav .box-flex
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
